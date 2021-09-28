@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,24 +8,20 @@
 
 /* VIDEO */
 
-.video {
+.season-bg {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+    background-image: url("./assets/spring.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    opacity: .8;
 }
 
-.video video {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-}
 
 /* APP */
 
@@ -52,6 +50,15 @@
     font-size: 40px;
     color: white;
     cursor: pointer;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.audio i:hover {
+    color: #A2F887;
+}
+
+.audio .pause i:hover {
+    color: #f88787;
 }
 
 .audio .progress {
@@ -75,13 +82,38 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 40px;
-    font-weight: bold;
+    font-family: "Explora";
+    font-weight: bolder;
+    text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 /* DURATION */
 
-.duration {
+.durations {
     grid-area: d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25%;
+}
+
+.duration {
+    width: 75px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 1vw;
+    font-size: 26px;
+    font-family: "Explora";
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 0px 15px #222;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.duration:hover {
+    background-color: rgb(162, 248, 135);
 }
 
 /* SEASONS */
@@ -94,10 +126,6 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 600px) {
-    .video video {
-        height: 100%;
-    }
-
     .audio .progress {
         width: 175px;
         height: 175px;
