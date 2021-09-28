@@ -124,9 +124,10 @@
     grid-area: s;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 10vh;
+    height: 60%;
+    margin: auto;
 }
 
 .season {
@@ -142,6 +143,8 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 600px) {
+
+
     .audio .progress {
         width: 175px;
         height: 175px;
@@ -167,5 +170,39 @@
         padding: 0;
         width: 90%;
         margin: auto;
+    }
+
+    .duration {
+        padding: 1vw;
+        width: 60px;
+    }
+
+    .seasons {
+        position: absolute;
+        left: -340px;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        height: 100px;
+        background-color: rgb(249, 250, 218);
+    }
+
+    .season {
+        width: 75px;
+        font-size: 24px;
+        margin: 5px;
+
+    }
+
+    .toggle-menu {
+        display: flex;
+        font-size: 20px;
+        cursor: pointer;
+        color: grey;
+        padding: 10px;
+    }
+
+    .toggle-menu:hover {
+        color: #f88787;
     }
 }
