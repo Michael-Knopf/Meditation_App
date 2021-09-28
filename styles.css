@@ -39,6 +39,24 @@
     ;
 }
 
+/* AUDIO */
+
+.audio {
+    grid-area: a;
+}
+
+/* DURATION */
+
+.duration {
+    grid-area: d;
+}
+
+/* SEASONS */
+
+.seasons {
+    grid-area: s;
+}
+
 
 /* MEDIA QUERIES */
 
