@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+/* VIDEO */
+
 .video {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .video video {
@@ -22,7 +25,22 @@
     min-height: 100%;
 }
 
+/* APP */
 
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "a a a a s s"
+        "a a a a s s"
+        "d d d d s s"
+        "d d d d s s"
+    ;
+}
+
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 600px) {
     .video video {
