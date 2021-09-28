@@ -43,6 +43,39 @@
 
 .audio {
     grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio i {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.audio .progress {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 40px;
+}
+
+.audio .progress svg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+
+.audio-time-remaining {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /* DURATION */
@@ -63,5 +96,26 @@
 @media screen and (max-width: 600px) {
     .video video {
         height: 100%;
+    }
+
+    .audio .progress {
+        width: 175px;
+        height: 175px;
+        margin: 0 10px;
+    }
+
+    .audio .progress svg {
+        width: 175px;
+        height: 175px;
+    }
+
+    .rect1,
+    .rect {
+        width: 125px;
+        height: 125px;
+    }
+
+    .audio-time-remaining {
+        font-size: 30px;
     }
 }
