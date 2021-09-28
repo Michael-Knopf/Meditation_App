@@ -94,16 +94,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 25%;
+    padding: 0 15%;
 }
 
-.duration {
+.duration,
+.season {
     width: 75px;
     height: 50px;
     outline: none;
     border: none;
     border-radius: 5px;
-    margin: 1vw;
+    margin: 3vw;
     font-size: 26px;
     font-family: "Explora";
     font-weight: bold;
@@ -112,7 +113,8 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
-.duration:hover {
+.duration:hover,
+.season:hover {
     background-color: rgb(162, 248, 135);
 }
 
@@ -120,7 +122,21 @@
 
 .seasons {
     grid-area: s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10vh;
 }
+
+.season {
+    margin: 3vh;
+}
+
+.toggle-menu {
+    display: none;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -145,5 +161,11 @@
 
     .audio-time-remaining {
         font-size: 30px;
+    }
+
+    .durations {
+        padding: 0;
+        width: 90%;
+        margin: auto;
     }
 }
