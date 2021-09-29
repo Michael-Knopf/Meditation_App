@@ -4,4 +4,5 @@ const openMenuBtn = document.querySelector(".toggle-menu"),
 openMenuBtn.addEventListener('click', () => {
     seasonsMenu.classList.toggle("active");
     openMenuBtn.classList.toggle("rotate");
+    console.log("got it")
 })

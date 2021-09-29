@@ -15,11 +15,15 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url("./assets/spring.jpg");
     background-position: center;
     background-size: cover;
-    background-color: black;
-    opacity: .8;
+
+}
+
+.season-bg img {
+
+    background-position: center;
+    background-size: cover;
 }
 
 
