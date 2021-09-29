@@ -1,7 +1,10 @@
-const openMenuBtn = document.querySelector(".toggle-menu"),
-    seasonsMenu = document.querySelector(".seasons");
+const play = document.querySelector(".play")
+const pause = document.querySelector(".pause")
+const audio = document.querySelector(".audio audio")
 
-openMenuBtn.addEventListener('click', () => {
-    seasonsMenu.classList.toggle("active");
-    openMenuBtn.classList.toggle("rotate");
+play.addEventListener('click', () => {
+    audio.play()
+})
+pause.addEventListener('click', () => {
+    audio.pause()
 })

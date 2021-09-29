@@ -78,6 +78,7 @@
     width: 200px;
     height: 200px;
     transform: rotate(45deg);
+    z-index: -1;
 }
 
 .audio-time-remaining {

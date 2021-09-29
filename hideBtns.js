@@ -6,6 +6,7 @@ let mouseLastMoved = new Date();
 document.addEventListener('mousemove', () => {
     mouseLastMoved = new Date();
     app.classList.remove("inactive")
+    document.body.style.cursor = "auto"
 })
 
 function deactivateApp() {
