@@ -35,6 +35,11 @@
         "d d d d s s"
         "d d d d s s"
     ;
+    transition: opacity 500ms ease-in-out;
+}
+
+.inactive {
+    opacity: 0;
 }
 
 /* AUDIO */
@@ -185,6 +190,7 @@
         margin: auto;
         height: 100px;
         background-color: rgb(249, 250, 218);
+        transition: left 500ms ease-in-out;
     }
 
     .season {
@@ -199,10 +205,20 @@
         font-size: 20px;
         cursor: pointer;
         color: grey;
-        padding: 10px;
+        padding-left: 20px;
+        padding-right: 5px;
+        transition: all .25s ease-in-out;
     }
 
     .toggle-menu:hover {
         color: #f88787;
+    }
+
+    .rotate {
+        transform: rotate(180deg) translateX(-20%);
+    }
+
+    .active {
+        left: 0;
     }
 }
