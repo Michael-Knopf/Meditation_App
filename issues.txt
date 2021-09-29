@@ -1,0 +1,4 @@
+Issues to fix:
+
+-progress bar does not restart after pause
+-styling mobile menu to just show arrow when hidden
