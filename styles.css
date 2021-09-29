@@ -17,13 +17,8 @@
     z-index: -1;
     background-position: center;
     background-size: cover;
-
-}
-
-.season-bg img {
-
-    background-position: center;
-    background-size: cover;
+    background-color: black;
+    opacity: .3;
 }
 
 

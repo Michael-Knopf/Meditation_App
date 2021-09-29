@@ -23,28 +23,30 @@
 
             <div class="progress">
                 <svg>
-                    <rect class="rect1" stroke-width="10" rx="8" height="150" width="150" y="25" x="25" stroke="#A2F887"
+                    <rect class="rect1" stroke-width="10" rx="8" height="150" width="150" y="25" x="25" stroke="#F07281"
                         fill="transparent"></rect>
                 </svg>
                 <svg>
-                    <rect class="rect" stroke-width="10" rx="8" height="150" width="150" y="25" x="25" stroke="#ffffff"
+                    <rect class="rect" stroke-width="10" rx="8" height="150" width="150" y="25" x="25" stroke="#FFFFFF"
                         fill="transparent"></rect>
                 </svg>
-                <div class="audio-time-remaining">00 : 00</div>
+                <div class="audio-time-remaining">
+                    00:00
+                </div>
             </div>
             <div class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
         </div>
         <div class="durations">
-            <button class="duration">2min</button>
-            <button class="duration">5min</button>
-            <button class="duration">10min</button>
-            <button class="duration">20min</button>
+            <button class="duration" audio-duration="120">2min</button>
+            <button class="duration" audio-duration="300">5min</button>
+            <button class="duration" audio-duration="600">10min</button>
+            <button class="duration" audio-duration="1200">20min</button>
         </div>
         <div class="seasons">
             <button id="winter" class="season">Winter</button>
             <button id="spring" class="season">Spring</button>
             <button id="summer" class="season">Summer</button>
-            <button id="autumn" class="season">Autumn</button>
+            <button id="fall" class="season">Autumn</button>
             <div class="toggle-menu"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
         </div>
     </div>
